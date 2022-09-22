@@ -1,0 +1,22 @@
+{
+  "name": "cs571-f22-hw2-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "tsc --outDir ./src-js/ && node ./src-js/app.js"
+  },
+  "author": "ctnelson2",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^7.5.0",
+    "@types/express": "^4.17.7",
+    "@types/node": "^14.14.10",
+    "errorhandler": "^1.5.1",
+    "express": "^4.18.1",
+    "express-rate-limit": "^5.1.3",
+    "morgan": "^1.10.0",
+    "node-fetch": "^3.2.10",
+    "typescript": "^4.8.2"
+  }
+}
