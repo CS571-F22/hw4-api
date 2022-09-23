@@ -52,10 +52,7 @@ app.use(function(req, res, next) {
 });
 
 app.get('/api/badgermon', (req, res) => {
-    // Normally, we would like to cache static responses.
-    // However, we would like to test students ability to memoize
-    // results; thus, force no cache.
-    res.set('Cache-control', 'no-store')
+    res.set('Cache-control', 'public, max-age=300')
     res.send(badgermon);
 });
 
